@@ -1,0 +1,79 @@
+body{
+    background-color: rgba(31, 41, 55, 1);
+}
+
+.cal{
+    text-align: center;
+}
+
+p{
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    height: 300px;
+    border-style: none;
+    font-size: 30px;
+    background-color: rgba(31, 41, 55, 1);
+    color: rgba(74, 223, 134, 1);
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+button{
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 8px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-style: none;
+    background-color: rgba(31, 41, 55, 1);
+    color: rgba(74, 223, 134, 1);
+}
+button:hover {
+
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgba(31, 41, 55, 1);
+    }
+
+    .cal{
+        text-align: center;
+    }
+
+    input{
+        margin-top: 10px;
+        width: 90%;
+        padding: 10px;
+        height: 300px;
+        border-style: none;
+        font-size: 30px;
+        background-color: rgba(31, 41, 55, 1);
+        color: rgba(74, 223, 134, 1);
+    }
+
+    .btn{
+        margin-top: 40px;
+    }
+
+    button{
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 8px;
+        font-size: 25px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-style: none;
+        background-color: rgba(31, 41, 55, 1);
+        color: rgba(74, 223, 134, 1);
+    }
+    button:hover {
+
+    }
+    }
