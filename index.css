@@ -1,79 +1,129 @@
-body{
-    background-color: rgba(31, 41, 55, 1);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    /*--background-color:white;*/
+    /*--primary-color:rgba(31, 41, 55, 1);*/
+    /*--secondry-color:rgba(74, 223, 134, 1);*/
+    /*--delete-color:orangered;*/
+    --background-color:white;
+    --primary-color:white;
+    --secondry-color:rgba(74, 223, 134, 1);
+    --delete-color:orangered;
+}
+
+.dark-theme{
+    --background-color:white;
+    --primary-color:rgba(31, 41, 55, 1);
+    --secondry-color:rgba(74, 223, 134, 1);
+    --delete-color:orangered;
+}
+
+.ico{
+    text-align: right;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var( --background-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .cal{
-    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-p{
+form{
+    margin-top: -50px;
+}
+
+form .display{
+    display: flex;
+    justify-content:flex-end;
+    margin: 120px 0;
+}
+
+form .display input{
+    flex: 1;
     margin-top: 10px;
-    width: 90%;
     padding: 10px;
-    height: 300px;
     border-style: none;
     font-size: 30px;
-    background-color: rgba(31, 41, 55, 1);
-    color: rgba(74, 223, 134, 1);
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+    text-align: right;
+    outline: 0;
+    cursor: pointer;
 }
 
-.btn{
-    margin-top: 40px;
+form .btn .clear-all{
+    color: var(--delete-color);
 }
 
-button{
+form .btn input{
     width: 75px;
     height: 75px;
     padding: 10px;
     border-radius: 50px;
-    margin: 8px;
+    margin:8px;
     font-size: 25px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-style: none;
-    background-color: rgba(31, 41, 55, 1);
-    color: rgba(74, 223, 134, 1);
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+    outline: 0;
+    cursor: pointer;
 }
-button:hover {
 
+form .btn .btn-equal{
+    width: 170px;
+    background-color:var(--secondry-color);
+    color: var(--primary-color);
 }
+
 
 @media screen and (max-width: 800px) {
     body{
-        background-color: rgba(31, 41, 55, 1);
+        background-color: var(--background-color);
+    }
+
+    #icon{
+        margin: 20px;
+    }
+
+    .container{
+        width: unset;
+        height: unset;
+        background-color: var(--primary-color);
+        display: unset;
+        text-align: unset;
+        justify-content: unset;
     }
 
     .cal{
         text-align: center;
+        padding: unset;
+        box-shadow: unset;
+        height: 100vh;
     }
 
     input{
-        margin-top: 10px;
-        width: 90%;
-        padding: 10px;
-        height: 300px;
-        border-style: none;
-        font-size: 30px;
-        background-color: rgba(31, 41, 55, 1);
-        color: rgba(74, 223, 134, 1);
+        margin-bottom:70px;
     }
 
-    .btn{
-        margin-top: 40px;
-    }
-
-    button{
-        width: 75px;
-        height: 75px;
-        padding: 10px;
-        border-radius: 50px;
-        margin: 8px;
-        font-size: 25px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        border-style: none;
-        background-color: rgba(31, 41, 55, 1);
-        color: rgba(74, 223, 134, 1);
-    }
-    button:hover {
-
-    }
-    }
+}
